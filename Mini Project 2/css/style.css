@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%; /* Pastikan body mengambil 100% tinggi viewport */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Atur agar elemen diatur dalam kolom */
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Konten Utama */
+.main {
+  flex: 1; /* Biarkan konten utama mengisi ruang yang tersedia */
+}
+
+nav {
+  width: 100%;
+  padding: 40px 100px;
+  background-color: #357eaf;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #bbe1fa;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 150px;
+  background-color: #f7f9fa;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h3 {
+  color: #00b4d8;
+  font-size: 1.2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #1b262c;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-style: italic;
+  font-weight: normal;
+  color: #3a506b;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.hero-text a {
+  padding: 12px 24px;
+  background-color: #00b4d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-text a:hover {
+  background-color: #04d5ff;
+}
+
+.hero-img img {
+  max-width: 600px;
+  height: auto;
+}
+
+/* About Section */
+.about {
+  padding: 60px 100px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item {
+  margin: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 100px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #04d5ff;
+}
+
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: #e0f7ff;
+  font-size: 1rem;
+  color: #333;
+}
+
