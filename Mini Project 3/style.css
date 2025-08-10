@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom right, #4a9782, #004030);
+  color: white;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.bg-blur {
+  position: relative;
+  min-height: 100vh; /* full page */
+  background-image: url("Makanan_Khas_Palembang-2023_12_13-16_54_33_d556e8a3690bc41016efa5361abeac9c_960x640_thumb.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.bg-blur::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3); /* transparansi tambahan */
+  z-index: 1;
+}
+
+.bg-blur > * {
+  position: relative;
+  z-index: 2; /* supaya konten tetap di atas overlay */
+}
+
+/* Animasi */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.bounce {
+  animation: bounce 1.5s infinite;
+}
+
+.slide-in {
+  animation: slide-in 1s ease-out forwards;
+}
+
+.section {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hover-effect:hover {
+  transform: scale(1.05) rotate(1deg);
+  filter: brightness(110%);
+  transition: all 0.3s ease-in-out;
+}

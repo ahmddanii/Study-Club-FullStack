@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Animated Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-dark bg-opacity-50 fixed-top text-white shadow"
+    >
+      <div class="container">
+        <a class="navbar-brand text-white" href="#"
+          ><img
+            src="logoipsum-355.png"
+            alt=""
+            width="30"
+            class="m-3"
+          />TasteBites</a
+        >
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="section bg-blur text-center d-flex flex-column justify-content-center align-items-center fade-in"
+    >
+      <h1 class="display-4 fw-bold text-shadow">Savor the Experience!</h1>
+      <p class="lead opacity-75">
+        Enjoy culinary delights that celebrate Indonesia’s traditions!
+      </p>
+      <button
+        class="btn btn-light rounded-pill px-4 py-2 mt-3 shadow hover-effect"
+      >
+        Get Started
+      </button>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="section text-center slide-in">
+      <div class="container">
+        <h2 class="mb-4 text-shadow">About TasteBites</h2>
+        <p class="opacity-75">
+          Dedicated to introducing and preserving the culinary richness of
+          traditional Indonesian cuisine — from Sabang to Merauke, every flavor
+          tells a cultural story.
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-6 mb-4">
+            <div
+              class="p-4 bg-white bg-opacity-10 rounded-4 shadow hover-effect"
+              style="filter: grayscale(0.5)"
+            >
+              <h4>Cita Rasa Nusantara</h4>
+              <p>
+                Serving authentic dishes like rendang, gudeg, pempek, and sate,
+                crafted with traditional recipes that preserve original flavors.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div
+              class="p-4 bg-white bg-opacity-10 rounded-4 shadow hover-effect"
+              style="filter: hue-rotate(20deg)"
+            >
+              <h4>Our Mission</h4>
+              <p>
+                Reviving traditional cuisine for modern generations through
+                contemporary presentation and authentic tastes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="section bg-dark bg-opacity-75 text-center text-white"
+    >
+      <div class="container">
+        <h2 class="mb-4 bounce text-shadow">Contact Me</h2>
+        <form class="mx-auto" style="max-width: 600px">
+          <input
+            type="text"
+            class="form-control mb-3 bg-white bg-opacity-25 text-white rounded shadow"
+            placeholder="Your Name"
+            style="filter: blur(0.5px)"
+          />
+          <input
+            type="email"
+            class="form-control mb-3 bg-white bg-opacity-25 text-white rounded shadow"
+            placeholder="Your Email"
+          />
+          <textarea
+            class="form-control mb-3 bg-white bg-opacity-25 text-white rounded shadow"
+            rows="4"
+            placeholder="Your Message"
+          ></textarea>
+          <button
+            class="btn btn-primary px-4 py-2 rounded-pill shadow hover-effect"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
